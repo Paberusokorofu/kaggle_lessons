@@ -1,3 +1,7 @@
+import math
+
+
+
 def get_pay (num_hours):
     pay_pretax = num_hours * 15
     pay_aftertax = pay_pretax * (1 - .12)
@@ -23,3 +27,20 @@ def print_hello():
 
 # Call the function
 print_hello()
+
+sqft_walls = 432
+sqft_ceiling = 144
+sqft_per_gallon = 400
+cost_per_gallon = 15
+
+
+def get_actual_cost(sqft_walls, sqft_ceiling, sqft_per_gallon, cost_per_gallon):
+    new_value = math.ceil((sqft_walls + sqft_ceiling) / sqft_per_gallon)
+    cost = new_value * cost_per_gallon
+    return cost
+
+actual_cost = get_actual_cost(sqft_walls, sqft_ceiling, sqft_per_gallon, cost_per_gallon)
+print(f"актуальная цена:{actual_cost} $")
+
+
+
