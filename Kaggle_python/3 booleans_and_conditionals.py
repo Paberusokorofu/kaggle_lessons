@@ -1,4 +1,4 @@
-https://www.kaggle.com/code/colinmorris/booleans-and-conditionals
+# https://www.kaggle.com/code/colinmorris/booleans-and-conditionals
 
 def can_run_for_president(age):
     """Can someone of the given age run for president in the US?"""
